@@ -1,0 +1,4 @@
+console -crlf
+*.php -crlf
+*.pp -crlf
+*.sh -crlf

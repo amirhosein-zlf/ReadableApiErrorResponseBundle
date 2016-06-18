@@ -1,0 +1,8 @@
+services:
+#    exception_listener.example:
+#        class: Exception\ReadableApiErrorResponseBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+  exception_listener.internal_server_exception:
+            class: Exception\ReadableApiErrorResponseBundle\EventListener\InternalServerExceptionListener
+            tags:
+                - { name: kernel.event_listener, event: kernel.exception }
