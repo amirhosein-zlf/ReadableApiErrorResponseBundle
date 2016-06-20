@@ -6,6 +6,7 @@ namespace Zolfa\ReadableApiErrorResponseBundle\EventListener;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class InternalServerExceptionListener
 {
