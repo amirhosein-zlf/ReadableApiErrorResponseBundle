@@ -10,7 +10,7 @@
     }
   ],
   "autoload": {
-    "psr4": {"Zolfa\\ReadableApiErrorResponseBundle\\": "ReadableApiErrorResponseBundle"}
+    "psr-4": {"Zolfa\\ReadableApiErrorResponseBundle\\": "ReadableApiErrorResponseBundle"}
   },
   "require": {
     "php": ">=5.3.0",
