@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Exception\ReadableApiErrorResponseBundle\EventListener;
+namespace Zolfa\ReadableApiErrorResponseBundle\EventListener;
 
 
 use Symfony\Component\HttpFoundation\Response;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Exception\ReadableApiErrorResponseBundle\DependencyInjection;
+namespace Zolfa\ReadableApiErrorResponseBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -26,7 +26,7 @@ class ExceptionListenerExtension extends Extension
         $loader->load('services.yml');
 
         $this->addClassesToCompile([
-            'Exception\ReadableApiErrorResponseBundle\EventListener\InternalServerExceptionListener',
+            'Zolfa\ReadableApiErrorResponseBundle\EventListener\InternalServerExceptionListener',
         ]);
     }
 }

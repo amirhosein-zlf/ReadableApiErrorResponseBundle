@@ -1,6 +1,6 @@
 <?php
 
-namespace Exception\ReadableApiErrorResponseBundle;
+namespace Zolfa\ReadableApiErrorResponseBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -9,6 +9,9 @@
       "role": "Developer"
     }
   ],
+  "autoload": {
+    "psr4": {"Zolfa\\ReadableApiErrorResponseBundle\\": "ReadableApiErrorResponseBundle"}
+  },
   "require": {
     "php": ">=5.3.0",
     "symfony": ">=2.0.0"
