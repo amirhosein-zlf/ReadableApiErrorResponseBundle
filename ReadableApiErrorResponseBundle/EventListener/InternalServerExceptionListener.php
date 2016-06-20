@@ -12,15 +12,15 @@ class InternalServerExceptionListener
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
         $exception = $event->getException();
-        if (0 === $exception->getCode()
-            ||
-            500 === $exception->getCode()
-        ) {
-            $response = new Response(json_encode(['error' => [
-                'message' => $exception->getMessage(),
-            ]]), 500);
-
-            $event->setResponse($response);
+        $code = 500;
+        if ($exception instanceof HttpException) {
+            $code = $exception->getStatusCode();
         }
+
+        $response = new Response(json_encode(['error' => [
+            'message' => $exception->getMessage(),
+        ]]), $code);
+
+        $event->setResponse($response);
     }
 }
